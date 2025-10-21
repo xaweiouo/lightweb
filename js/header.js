@@ -61,19 +61,19 @@ export function header(){document.querySelector('header').innerHTML=
             </label>
             <input type="checkbox" id="hamberger" class="hambergerBtn d-none">
             <ul class="sideNav d-none absolute">
-                <li class="p-10"><a href="#" class="">ABOUT US</a></li>
+                <li class="p-10"><a href="##" class="">ABOUT US</a></li>
                 <hr style="width: 200px; margin: 0px;">
-                <li class="p-10"><a href="#">NEWS</a></li>
+                <li class="p-10"><a href="##">NEWS</a></li>
                 <hr style="width: 200px; margin: 0px;">
                 <li class="p-10"><a href="./products.html">PRODUCTS</a></li>
                 <hr style="width: 200px; margin: 0px;">
-                <li class="p-10"><a href="#">FAQ</a></li>
+                <li class="p-10"><a href="##">FAQ</a></li>
                 <hr style="width: 200px; margin: 0px;">
-                <li class="p-10"><a href="#">CONTACT</a></li>
+                <li class="p-10"><a href="##">CONTACT</a></li>
                 <hr style="width: 200px; margin: 0px;">
                 <li class="p-10"><a href="./stakeholders.html">STAKEHOLDERS</a></li>
                 <hr style="width: 200px; margin: 0px;">
-                <li class="p-10"><a href="https://www.cwa.gov.tw/V8/C/W/Town/Town.html?TID=1000702" class="mobileWeather px-20 py-40" target="_blank"></a></li>
+                <li class="p-10"><a href="https://www.cwa.gov.tw/V8/C/W/Town/Town.html?TID=1000702" class="mobileWeather px-20" target="_blank"></a></li>
             </ul>
         </div>        
 `
