@@ -1,0 +1,77 @@
+.stakeholdersBanner{
+    background-image: url(https://images.unsplash.com/photo-1752159400890-d906038f1b35?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2071);
+    background-position:center 75%;
+    height: 360px;
+    line-height: 200px;
+    letter-spacing: .2em;
+    color: white;
+    text-shadow: 0 0 7px black;
+    font-weight: 500;
+    position:relative;
+}
+
+.filter{
+    /* width: 100%;
+    height: 100%; */
+    background-color: black;
+    opacity: .35;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: 1;
+}
+
+.stakeholdersBanner > *:not(.filter) {
+    position: relative;
+    z-index: 2;
+}
+
+.stakeholders{
+    border:1px solid green;
+}
+
+.stakeholders thead{
+    background-color: green;
+    color: white;
+}
+
+.stakeholders th,td{
+    padding: 20px 80px;
+    line-height: 1.5;
+}
+
+.stakeholders td{
+    border: 1px solid gray;
+    vertical-align:middle;
+}
+
+.th{
+    vertical-align:middle;
+    text-align: center;
+}
+
+@media(max-width:1200px){
+    .stakeholders{
+        width: 800px;
+        overflow: auto;
+    }
+
+    .stakeholders th,td{
+    padding: 20px 20px;
+    line-height: 1.5;
+}
+}
+
+@media(max-width:767px){
+    .stakeholdersBanner .h1{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:375px){
+    .stakeholders th,td{
+    font-size: 15px;
+    }
+}

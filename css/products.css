@@ -1,0 +1,27 @@
+.productsBanner{
+    background-image: url(https://images.unsplash.com/photo-1485758152456-1e91810337e0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974);
+    background-position:left 65%;
+    height: 360px;
+    line-height: 200px;
+    letter-spacing: .2em;
+    color: white;
+    text-shadow: 0 0 7px black;
+    font-weight: 500;
+    position:relative;
+}
+
+@media(max-width:1000px){
+    .productsList .col-4{
+    width:calc(100%/12*6);
+    padding:10px;
+    padding-bottom: 30px;
+    }
+}
+
+@media(max-width:600px){
+    .productsList .col-4{
+    width:100%;
+    padding:10px;
+    padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/asset/favicon-32x32.png" />
+    <link rel="bookmark" href="/asset/favicon-32x32.png" />
+    <link rel="stylesheet" href="/css/all.css">
+    <title>LIGHT PRODUCTS</title>
+</head>
+<body>
+    <header></header>
+
+    <div class="productsBanner d-flex justify-center align-center">
+        <p class="h1 text-center py-40">PRODUCTS</p>
+        <!-- <div class="filter"></div> -->
+    </div>
+
+    <div class="productsList w-1410px px-10 py-40 margin-x-auto">
+        <div class="productsList row">
+            <!-- <div class="col-4">
+                <div class="card">
+                    <a href="#">
+                        <img src="https://images.unsplash.com/photo-1495506539593-87a23e41b6fe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwbGlnaHR8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&q=60&w=500" alt="" class="card-img-top">
+                        <P class="text-center">Lorem ipsum dolor sit amet</P>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+    <div class="topbtn" onclick="topFunction()">
+        <p>^</p>
+    </div>
+    
+    <footer></footer>
+    <script src="/js/topbtn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script>
+        axios.get('https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0001-001?Authorization=CWA-10F2461B-1583-4877-B5A1-128547251FF9&StationId=C2G640&StationName=%E9%B9%BF%E6%B8%AF').then(
+    function(response){
+        document.querySelector('.weather').textContent=
+        `
+        LUKANG TEMP NOW: ${response.data.records.Station[0].WeatherElement.AirTemperature} ℃
+        `;
+
+        document.querySelector('.mobileWeather').textContent=
+        `
+        LUKANG TEMP NOW: ${response.data.records.Station[0].WeatherElement.AirTemperature} ℃
+        `;
+    })
+    </script>
+    <script type="module" src="/js/all.js"></script>
+</body>
+</html>

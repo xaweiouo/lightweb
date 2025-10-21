@@ -1,0 +1,126 @@
+.header{
+    height: 110px;
+}
+
+.logo{
+    height: 110px;
+}
+
+.hambergerBtn:checked + .sideNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:100%;
+    right:0;
+    z-index: 5;
+}
+
+.sideNav{
+    width: 200px;
+    background-color: white;
+    font-size: 25px;
+}
+
+.gifBanner p{
+    color: white;
+    z-index: 4;
+    font-size: 130px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: .1em;
+    text-shadow: 0 0 20px black;
+}
+
+.index-banner{
+    background-image: url('https://images.unsplash.com/photo-1500741236341-1b7a0f91f1f6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');
+    max-width: 100vw;
+    height: 100vh;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-size: 130px;
+    line-height: 1.2;
+    letter-spacing: .1em;
+    text-shadow: 0 0 20px black;
+}
+
+.index-vision{
+    background-image: url('https://images.unsplash.com/flagged/photo-1551135049-83f3419ef05c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');
+    max-width: 100vw;
+    min-height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-size: 70px;
+    line-height: 1.2;
+    letter-spacing: .1em;
+    text-shadow: 0 0 20px black;
+    position: relative;
+}
+
+.filter{
+    /* width: 100%;
+    height: 100%; */
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: 1;
+}
+
+.index-vision > *:not(.filter) {
+    position: relative;
+    z-index: 2;
+}
+
+@media(max-width:1400px){
+    .nav a{
+        font-size: 14px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    
+    .language{
+        display: none;
+    }
+
+    .index-banner{
+        font-size: 50px;
+    }
+
+    .gifBanner p{
+        font-size: 50px;
+    }
+
+    .index-vision{
+        font-size: 30px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width:767px){
+    .nav{
+        display: none;
+    }
+    .hamberger{
+        display: block;
+    }
+    .language{
+        display: none;
+    }
+    .index-banner{
+        font-size: 30px;
+    }
+    .index-vision{
+        font-size: 20px;
+    }
+}

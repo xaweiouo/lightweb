@@ -1,0 +1,115 @@
+header{
+    background-color:rgb(245, 245, 245);
+}
+
+footer{
+    /* border-top: 1px solid burlywood; */
+    box-shadow: 0 0 3px burlywood;
+}
+
+.nav > li > a{
+    background-color: rgb(245, 245, 245);
+}
+
+.nav p{
+    background-color: rgb(245, 245, 245);
+}
+
+.dropDown{
+    background-color:white;
+    width: 200px;
+}
+
+.test{
+    width: 200px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col-12{
+    width:100%;
+    padding:10px;
+    padding-bottom: 30px;
+}
+
+.col-4{
+    width:calc(100%/12*4);
+    padding:10px;
+    padding-bottom: 30px;
+}
+
+.h1{
+    font-size: 56px;
+}
+
+.nav a:hover{
+    color: burlywood;
+}
+
+.aboutUs:hover .dropDown{
+    display: flex;
+    z-index: 5;
+}
+
+.faq:hover .dropDown{
+    display: flex;
+    z-index: 5;
+}
+
+.contact:hover .dropDown{
+    display: flex;
+    z-index: 5;
+}
+
+.nav li{
+    background-color: #fff;
+}
+
+.card p{
+    font-size: 25px;
+}
+
+.card:hover .card-img-top{
+    transform: scale(1.15);
+    transition: .35s;
+}
+
+.imgWrap{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 300px;
+    
+
+    /* min-width: 100%;
+    max-height: 300px; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.topbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border:1px solid green;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    z-index: 4;
+    right: 20px;
+    bottom: 20px;
+    color: green;
+}
+
+.topbtn:hover{
+    cursor: pointer;
+}
