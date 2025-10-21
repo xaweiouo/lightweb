@@ -2,7 +2,7 @@ export function header(){document.querySelector('header').innerHTML=
 `
         <div class="header w-1410px margin-x-auto d-flex justify-between align-center relative">
             <a href="index.html">
-            <img src="/asset/logo.svg" alt="logo" class="logo">
+            <img src="../asset/logo.svg" alt="logo" class="logo">
             </a>
 
             <ul class="nav d-flex align-center">
@@ -15,7 +15,7 @@ export function header(){document.querySelector('header').innerHTML=
                         <hr style="width: 200px; margin: 0px;">
                         <li class="p-10"><a href="#">LOCATION</a></li>
                         <hr style="width: 200px; margin: 0px;">
-                        <li class="p-10"><a href="/html/index.html#vision">VISION</a></li>
+                        <li class="p-10"><a href="./index.html#vision">VISION</a></li>
 
                     </ul>
                 </li>
